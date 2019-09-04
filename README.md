@@ -44,20 +44,15 @@ The code is currently tested only on GPU
     
       - Create soft link to dataset by
        ```
-             ln -s web-bird bird
-             ln -s web-car car
-             ln -s web-aircraft aircraft
+       ln -s web-bird bird
+       ln -s web-car car
+       ln -s web-aircraft aircraft
        ```
 
-      - Modify `CUDA_VISIBLE_DEVICES` to proper cuda device id in 
-          ```
-          cub200_run.sh
-          car196_run.sh
-          aircraft100_run.sh
-          ```
+      - Modify `CUDA_VISIBLE_DEVICES` to proper cuda device id in  ``` cub200_run.sh car196_run.sh aircraft100_run.sh ```
       - Activate virtual environment(e.g. conda) and then run the script
        ```
-          bash cub200_train.sh
-          bash car196_run.sh
-          bash aircraft100_run.sh
+       bash cub200_train.sh
+       bash car196_run.sh
+       bash aircraft100_run.sh
        ```
