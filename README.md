@@ -45,3 +45,4 @@ The code is currently tested only on GPU
        bash car196_run.sh
        bash aircraft100_run.sh
        ```
+![table](performance.png)
