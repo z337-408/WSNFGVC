@@ -42,12 +42,13 @@ The code is currently tested only on GPU
 
     - If you want to train the whole network from begining using source code on the web fine-grained dataset, please follow subsequent steps
     
-      - Create soft link to dataset by 
-                   ```
-           ln -s web-bird bird
-           ln -s web-car car
-           ln -s web-aircraft aircraft
-            ```
+      - Create soft link to dataset by
+       ```
+             ln -s web-bird bird
+             ln -s web-car car
+             ln -s web-aircraft aircraft
+       ```
+
       - Modify `CUDA_VISIBLE_DEVICES` to proper cuda device id in 
           ```
           cub200_run.sh
@@ -55,8 +56,8 @@ The code is currently tested only on GPU
           aircraft100_run.sh
           ```
       - Activate virtual environment(e.g. conda) and then run the script
-          ```
+       ```
           bash cub200_train.sh
           bash car196_run.sh
           bash aircraft100_run.sh
-          ```
+       ```
