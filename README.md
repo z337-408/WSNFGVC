@@ -26,18 +26,6 @@ The code is currently tested only on GPU
         tar -xvf web-car.tar.gz
         tar -xvf aircraft-car.tar.gz
         ```
-* **Model Preparation**
-    - Download the following trained models into `model/` using  
-        - Bird:      ``` wget https://wsnfg.oss-cn-hongkong.aliyuncs.com/bird-77.22.pth     ```
-* **Demo**
-
-    - If you just want to do a quick test on the model and check the final fine-grained recognition performance, please follow subsequent steps
-  
-      - Create a soft link for data by `ln -s web-bird bird`
-      - Activate virtual environment (e.g. conda)
-      - Modify `CUDA_VISIBLE_DEVICES` to proper cuda device id in `cub200_demo.sh` 
-      - Run demo using `bash cub200_demo.sh`
-
 * **Source Code**
 
     - If you want to train the whole network from begining using source code on the web fine-grained dataset, please follow subsequent steps
