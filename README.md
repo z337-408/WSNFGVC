@@ -20,7 +20,11 @@ The code is currently tested only on GPU
     - Download data into project root directory and uncompress them using
     ```
     wget https://wsnfg.oss-cn-hongkong.aliyuncs.com/web-bird.tar.gz
+    wget https://wsnfg.oss-cn-hongkong.aliyuncs.com/web-car.tar.gz
+    wget https://wsnfg.oss-cn-hongkong.aliyuncs.com/web-aircraft.tar.gz
     tar -xvf web-bird.tar.gz
+    tar -xvf web-car.tar.gz
+    tar -xvf aircraft-car.tar.gz
     ```
 * **Model Preparation**
     - Download the following trained models into `model/` using  
@@ -43,19 +47,5 @@ The code is currently tested only on GPU
       - Activate virtual environment(e.g. conda) and then run the script
           ```
           bash cub200_train.sh
-          ```
           
-* **Other datasets**   
-
-    - If you want to use our model on our web car dataset or aircraft dataset,  download datasets using
-        ```
-        wget https://wsnfg.oss-cn-hongkong.aliyuncs.com/web-car.tar.gz
-        wget https://wsnfg.oss-cn-hongkong.aliyuncs.com/web-aircraft.tar.gz
-        tar -xvf web-car.tar.gz
-        tar -xvf aircraft-car.tar.gz
-        ```
-    
-    - We provide the trained model on web car dataset. You can download it using
-         - Car :      ```  wget https://wsnfg.oss-cn-hongkong.aliyuncs.com/car-78.71.pth     ```
-      
-    - If you want to train the network, change the data dictionary `--data` and class number `--n_classes` in `cub200_run.sh`. Then run the script.
+          ```
